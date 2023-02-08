@@ -6,13 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/isimText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Super Kahraman Ismi Girin "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/yasText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/yasText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Super Kahraman Yasi "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/meslekText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isimText" />
+
+    <EditText
+        android:id="@+id/meslekText"
+        android:layout_width="339dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Super Kahraman Meslegi "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yasText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="superKahramanYap"
+        android:text="Super Kahraman Olustur"
+        app:layout_constraintBottom_toTopOf="@+id/sonucText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meslekText" />
+
+    <TextView
+        android:id="@+id/sonucText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="244dp"
+        android:text="Isim : Yas: Meslek : "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
