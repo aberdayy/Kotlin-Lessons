@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         uyariMesaji.setMessage("Lutfen sifre girin. Tekrar denemek icin butona basin")
         uyariMesaji.setPositiveButton("Evet",DialogInterface.OnClickListener { dialog, which -> Toast.makeText(this, "Bastan deniyorsunuz",Toast.LENGTH_LONG).show()
         })
+
         uyariMesaji.setNegativeButton("Hayir",DialogInterface.OnClickListener { dialog, which -> Toast.makeText(this,"Hayiri sectiniz",Toast.LENGTH_SHORT).show()
         })
         uyariMesaji.show()
