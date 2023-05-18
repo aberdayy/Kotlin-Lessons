@@ -24,8 +24,7 @@
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="165dp"
-            android:layout_height="165dp"
-            app:srcCompat="@drawable/image" />
+            android:layout_height="165dp" />
 
         <ImageView
             android:id="@+id/imageView6"
