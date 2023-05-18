@@ -19,16 +19,13 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(applicationContext, "Hosgeldin sevgili yoldas!",Toast.LENGTH_SHORT).show()
     }
     fun mesajGoster(view: View){
+
         val uyariMesaji = AlertDialog.Builder(this@MainActivity)
         uyariMesaji.setTitle("Uyari mesaji basligi")
         uyariMesaji.setMessage("Lutfen sifre girin. Tekrar denemek icin butona basin")
-
-        uyariMesaji.setPositiveButton("Evet",DialogInterface.OnClickListener { dialog, which ->
-            Toast.makeText(this, "Bastan deniyorsunuz",Toast.LENGTH_LONG).show()
+        uyariMesaji.setPositiveButton("Evet",DialogInterface.OnClickListener { dialog, which -> Toast.makeText(this, "Bastan deniyorsunuz",Toast.LENGTH_LONG).show()
         })
-
-        uyariMesaji.setNegativeButton("Hayir",DialogInterface.OnClickListener { dialog, which ->
-            Toast.makeText(this,"Hayiri sectiniz",Toast.LENGTH_SHORT).show()
+        uyariMesaji.setNegativeButton("Hayir",DialogInterface.OnClickListener { dialog, which -> Toast.makeText(this,"Hayiri sectiniz",Toast.LENGTH_SHORT).show()
         })
         uyariMesaji.show()
 
